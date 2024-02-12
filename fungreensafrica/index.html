@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title style="font-family: deepimpact;">Fun Greens Africa</title>
+	<style>
+		* {box-sizing:border-box}
+
+		/* Slideshow container */
+		.section-image {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Hide the images by default */
+		.myslide{
+		  display: none;}
+		  
+		img {vertical-align: middle;}
+		
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  margin-top: -22px;
+		  padding: 16px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+
+
+		/* Number text (1/8 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0; 
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		#fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+		#main-text {
+			font-family:sans-serif;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: -200px;
+
+		}
+		body {
+			backround-color:royalblue;
+		}
+		
+	</style>
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("myslide");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+	</script>
+	
+</head>
+<header class ="header">
+		<img class="logo-img" src="images/logo.jpeg " style="width:60px; height:60px; float: left;">
+		<h1 id="header-text" style="text-align: center; color: red;">FUN GREENS AFRICA</h1>
+</header>
+<body>
+	<div class="container" style="max-width: 100%;width: auto;height: fit-content;">
+		
+			
+		<p id="main-text"  style="text-align:center;font-size: 30px;font-weight: bold; font-family: sans-serif;">Specializing in synthetic materials, Fun Greens Africa is also
+		exploring novel technologies in other fields that will level the
+		playing field for local and international businesses in Ken ya and
+		the surrounding region.</p>
+	</div>
+	
+		<div class="section-img">
+			
+			<div class= "myslide fade">
+				<div class="numbertext">1 / 8</div>
+				<img src ="images/image9.JPG" style="width: 100%; height:550px;;">
+			</div>	
+			<div class= "myslide fade" >
+				<div class="numbertext">2 / 8</div>
+				<img src="images/image2.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			<div class= "myslide fade" >
+				<div class="numbertext">3 / 8</div>
+				<img src="images/image3.JPG" style="width:100%; height:550px;;;;">
+			</div>	
+			<div class= "myslide fade" >
+				<div class="numbertext">4 / 8</div>
+				<img src="images/image4.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			<div class= "myslide fade" >
+				<div class="numbertext">5 / 8</div>
+				<img src="images/image5.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			<div class= "myslide fade" >
+				<div class="numbertext">6 / 8</div>
+				<img src="images/image6.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			<div class= "myslide fade" >
+				<div class="numbertext">7 / 8</div>
+				<img src="images/image7.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			<div class= "myslide fade" >
+				<div class="numbertext">8 / 8</div>
+				<img src="images/image8.JPG" style="width:100%; height:550px;;;;">
+			</div>
+			 <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		  <span class="dot" onclick="currentSlide(7)"></span>
+		  <span class="dot" onclick="currentSlide(8)"></span>
+		</div>	
+	</div>
+	<script>
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("myslide");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>	
+	<div class="profile">
+		<div id="profile-intro" style="background-color: lightskyblue;margin-top: -30px; font-family:Verdana,sans-seri">
+			<p id="introduction-text" style="text-align:center;font-size: 30px;font-weight: bold;">
+				Fun Greens Africa was established in 2018 with the goal
+				of introducing turf grass surfaces in the country. The
+				founder of the company, Ajay Shah, a professional golfer
+				has spent many years abroad playing at a professional
+				level in his chosen sport. When he entered the
+				international scene, he felt at a slight disadvantage,
+				playing on surfaces that he was not used to in Africa. On
+				his return to Kenya, he noticed this same disadvantage
+				was there in many other sports. Playing surfaces were
+				uneven and athletes faced the challenge of ball control.
+				This inspired him to introduce the kind of turf grass
+				surfaces into the local market that one would typically
+				find in the international scene.</p>
+		</div>
+		<div class="setion-proffile" style="background-color:lightcyan; margin-top: -30px;font-family:Verdana,sans-seri;">
+			<div id="profile-info" style="width: 100%;">
+				<h2 style="font-size: 35px;font-weight: bold; text-align: center;color: green; ">WHAT WE DO:</h2>
+				<p id="text-profile" style="text-align:center;font-weight: bold;font-size: 30px;">
+					Building Golf Putting Greens,
+					Multipurpose Tennis Courts,
+					7 a side football/ Hockey Pitches,
+					Golf Hitting Mats & Cages,
+					Balconies and Verandas</p>
+			</div>
+			<div id="profile-reason">
+				<h3 style="font-size: 35px;font-weight: bold; text-align: center;color: green;">WHY WITH GRASS?</h3>
+				<P id="text-reason" style="font-size: 30px;font-weight: bold;text-align: center;">
+					Natural look & feel
+					Easy to maintain
+					Extremely durable
+					Green all year
+					No grass stains
+					No odour
+					No allergies
+					UV Protection
+					</P>
+			</div>
+			<div id="profile-why">
+				<h3 style="font-size: 35px;font-weight: bold; text-align: center;color: green;">WHY INSTALL WITH US</h3>
+				<p style="font-size: 30px;font-weight: bold;text-align: center;">Done to your satisfaction | Affordable |
+				   No hidden charges | Free maintenance |Timely
+				</p>
+			</div>
+			<div id="profile-satement">
+				<h3 id= "statement"style="font-size: 35px;font-weight: bold; text-align: center;color: lawngreen;">OUR MISSION STATEMENT</h3>
+				<p id="text-statement" style="font-size: 30px;font-weight: bold;text-align: center;">Leveling the playing field</p>
+			</div>
+		</div>
+
+	<div class="company-info" style="background-color:lightgrey; margin-top: -30px; padding-top: 5px; max-height:400px;">
+		<h4 style="font-size: 35px;font-weight: bold; text-align: center;color: green;">Director:</h4>
+		<h5 style="font-size: 35px;font-weight: bold; text-align: center;color: yellowgreen;">Ajay Anil Shah</h5>
+		<p style="font-size: 30px;font-weight: bold;text-align: center;">
+			As the business grows the company will
+			explore the possibilities of introducing
+			non-executive directors to the board
+			who are well established business people
+			and can open key doors so that the
+			business will continue to grow.
+		</p>
+	</div>	
+</body>
+<footer>
+	<div style="background-color: greenyellow; margin-top: -40px">	
+		<div id="footer-logo" style="float: left;">
+		<img src="images/logo.JPEG" style="width:50px; height:50px;">
+	</div>
+	<div style="float:right">
+		<h4 id="footer-info"style="font-size: 35px;font-weight: bold; text-align: center;color: darkred;">CONTACT US</h4>
+		<p id="contact-info" style="font-size: 30px;font-weight: bold;text-align: center; color: red;">FUN GREENS AFRICA
+		P.O BOX 64163, NAIROBI, KENYA, Cell:+254 729 177 123
+	Email: ajaygolfpro@yahoo.com, Website: www.fungreensafrica.co.ke
+		</p>
+	</div>
+	</div>
+</footer>
+</html>
